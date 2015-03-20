@@ -23,6 +23,26 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        
+        $("a.fancybox, .gallery .gallery-row a").attr('rel','postsgallery').fancybox({
+	        'overlayOpacity' : 0.9,
+	        'overlayColor' : '#111',
+	        'hideOnOverlayClick' : 'true',
+	        'enableEscapeButton' : 'true',
+	        'showCloseButton' : 'true'
+	    });
+        
+        
+        $("#partner-slider").owlCarousel({
+	    
+		    autoPlay: 6000,       
+	        items : 4,
+	        loop:true,
+	        autoplay: true,
+	        	       
+	
+		});
+        
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -32,6 +52,17 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+         $("#owl-slider").owlCarousel({
+	    
+		    autoPlay: 6000,       
+	        items : 1,
+	        loop:true,
+	        autoplay: true,
+	        animateOut: 'fadeOut'
+	       
+	
+		});
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

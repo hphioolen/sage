@@ -9,7 +9,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      
+      
+      <?php
+		    $logo = get_template_directory_uri() . '/dist/images/logo.png';
+		   
+	 ?>
+		
+		    <a id="logo" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'description' ); ?>">
+		    	
+		    	<img src="<?php echo $logo; ?>" alt="<?php bloginfo( 'name' ); ?>" />
+		    	
+		    </a>
+
+      
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">

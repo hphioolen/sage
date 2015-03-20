@@ -9,9 +9,19 @@
   "dependencies": {
     "modernizr": "2.8.2",
     "jquery": "1.11.2",
-    "bootstrap": "3.3.2"
+    "bootstrap": "3.3.2",
+    "Newfish": "hphioolen/newfish",
+    "owlslider": "hphioolen/owlslider",
+    "portfolio": "hphioolen/portfolio"
   },
   "overrides": {
+    "owl.carousel": {
+      "main": [
+        "./dist/owl.carousel.js",
+        "./dist/assets/owl.carousel.css",
+        "./dist/assets/owl.theme.default.css"
+      ]
+    },
     "modernizr": {
       "main": "./modernizr.js"
     },
